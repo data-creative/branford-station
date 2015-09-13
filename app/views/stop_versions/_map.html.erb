@@ -13,8 +13,8 @@
 
     L.mapbox.accessToken = "pk.eyJ1IjoiczJ0MiIsImEiOiJEN09jR2JNIn0.D-Q6idg2D7ZtTxkCRvaeGQ"
 
-    var map = L.mapbox.map('map-container', 'examples.map-i86nkdio')
-        .setView([37.7846897817763, -122.41198539733887], 14)
+    var map = L.mapbox.map('map-container', 'mapbox.streets')
+        .setView([37.7846897817763, -122.41198539733887], 4)
 
     map.scrollWheelZoom.disable();
 
@@ -75,7 +75,10 @@
 
         map.fitBounds(bounds)
 
+        map.zoomOut(5)
     });
+
+
 
 </script>
 <% end %>
