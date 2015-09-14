@@ -118,4 +118,8 @@ View in browser at [localhost:3000](localhost:3000).
 
 ### Production Environment Setup
 
-todo
+
+
+```` sh
+git push heroku master
+````

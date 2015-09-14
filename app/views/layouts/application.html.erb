@@ -17,7 +17,11 @@
   <%= yield %>
   <hr>
   <footer style="margin-bottom:2em;">
-    <p><%=  link_to "view", "/" %>&nbsp;|&nbsp;<%=  link_to "source", "https://github.com/s2t2/branford_station" %> </p>
+    <p>
+      <%=  link_to "view", "/" %>
+      &nbsp;|&nbsp;
+      <%=  link_to "source", "https://github.com/data-creative/branford_station" %>
+    </p>
   </footer>
 </div>
 <%= yield(:js_footer) %>
