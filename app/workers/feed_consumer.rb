@@ -1,3 +1,5 @@
+require 'pp'
+
 class FeedConsumer
   FEED_FILE_NAMES = ["agency.txt","stops.txt","routes.txt","trips.txt","stop_times.txt","calendar.txt","calendar_dates.txt","shapes.txt","fare_attributes.txt","fare_rules.txt","frequencies.txt","transfers.txt","feed_info.txt"]
 
