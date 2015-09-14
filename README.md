@@ -118,8 +118,11 @@ View in browser at [localhost:3000](localhost:3000).
 
 ### Production Environment Setup
 
-
+Reference ["Deploying a Rails app to Heroku"](http://data-creative.info/process-documentation/2015/07/25/how-to-deploy-a-rails-app-to-heroku.html)
+ and ["Working with Databases on Heroku"](http://data-creative.info/process-documentation/2015/08/17/databases-on-heroku.html).
 
 ```` sh
 git push heroku master
 ````
+
+View in browser at [https://branford-station.herokuapp.com/](https://branford-station.herokuapp.com/).

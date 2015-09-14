@@ -47,6 +47,6 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+
 production:
-  <<: *default
-  database: branford_station_production
+  url: <%= ENV['CLEARDB_DATABASE_URL'] %>
