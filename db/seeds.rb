@@ -6,10 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-FeedConsumer.perform(:load => true, :source_urls => [
-  "http://www.shorelineeast.com/google_transit.zip",
-  "http://web.mta.info/developers/data/mnr/google_transit.zip",
-  "http://www.bart.gov/dev/schedules/google_transit.zip",
-  "http://www.caltrain.com/Assets/GTFS/caltrain/GTFS-Caltrain-Devs.zip",
-  "http://www.transitchicago.com/downloads/sch_data/google_transit.zip"
-])
+FEED_URLS = [
+  "http://www.shorelineeast.com/google_transit.zip"#,
+  #"http://web.mta.info/developers/data/mnr/google_transit.zip",
+  #"http://www.bart.gov/dev/schedules/google_transit.zip",
+  #"http://www.caltrain.com/Assets/GTFS/caltrain/GTFS-Caltrain-Devs.zip",
+  #"http://www.transitchicago.com/downloads/sch_data/google_transit.zip"
+]
+FeedConsumer.perform(:source_urls => FEED_URLS, :load => true)
